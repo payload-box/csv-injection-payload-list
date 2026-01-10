@@ -1,5 +1,6 @@
 # CSV Injection (Formula Injection) Payload List
 
+<<<<<<< HEAD
 ## Overview
 CSV Injection, also known as **Formula Injection**, is a security vulnerability where malicious users can inject formulas or commands into CSV files. This attack is executed through formulas that are automatically evaluated when applications like **Microsoft Excel**, **LibreOffice Calc**, or **Google Sheets** open the CSV file.
 
@@ -8,6 +9,11 @@ When a spreadsheet application opens a CSV file, it automatically interprets cel
 - **Data Exfiltration**
 - **System Information Disclosure**
 - **Privilege Escalation**
+=======
+<img src="https://github.com/payload-box/csv-injection-payload-list/blob/main/assets/csv-inection-payloadbox-ismailtasdelen.jpeg">
+
+CSV Injection, also known as **Formula Injection**, is a security vulnerability where malicious users can inject formulas or commands into CSV files. This attack is executed through formulas that are automatically evaluated when applications like **Microsoft Excel** or **LibreOffice Calc** open the CSV file.
+>>>>>>> 05d3a05b94f7485d49868981bd1c705c4cb4370c
 
 ---
 
