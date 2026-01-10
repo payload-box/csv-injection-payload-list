@@ -1,7 +1,5 @@
 # CSV Injection (Formula Injection) Payload List
 
-<<<<<<< HEAD
-## Overview
 CSV Injection, also known as **Formula Injection**, is a security vulnerability where malicious users can inject formulas or commands into CSV files. This attack is executed through formulas that are automatically evaluated when applications like **Microsoft Excel**, **LibreOffice Calc**, or **Google Sheets** open the CSV file.
 
 When a spreadsheet application opens a CSV file, it automatically interprets cells starting with special characters (`=`, `+`, `-`, `@`, `|`) as formulas, which can lead to:
